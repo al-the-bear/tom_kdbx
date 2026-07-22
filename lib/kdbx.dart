@@ -23,6 +23,7 @@ export 'src/kdbx_object.dart'
     show
         KdbxUuid,
         KdbxObject,
+        KdbxObjectUuidControl,
         KdbxNode,
         Changeable,
         ChangeEvent,

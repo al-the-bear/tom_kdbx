@@ -132,6 +132,20 @@ extension IterableKdbxObject<T extends KdbxObject> on Iterable<T> {
       firstWhereOrNull((element) => element.uuid == uuid);
 }
 
+/// Public API for assigning a [KdbxObject]'s UUID.
+///
+/// Applications that must map an externally-owned stable identity onto a KDBX
+/// object's UUID — e.g. keeping a document section's own id equal to the KDBX
+/// entry UUID so section-scoped merge can key on it — need to set the UUID at
+/// creation time rather than accept the random one. This exposes exactly that
+/// one capability without opening the whole internal [KdbxObjectInternal]
+/// surface. Delegates to [KdbxObjectInternal.forceSetUuid].
+extension KdbxObjectUuidControl on KdbxObject {
+  /// Overwrites this object's UUID with [uuid] (force-sets, bypassing the
+  /// normal immutability of the identity field).
+  void assignUuid(KdbxUuid uuid) => forceSetUuid(uuid);
+}
+
 extension KdbxObjectInternal on KdbxObject {
   List<KdbxSubNode<dynamic>> get objectNodes => [
     icon,
