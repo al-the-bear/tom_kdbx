@@ -29,6 +29,27 @@ class KdbxCustomData extends KdbxNode {
 
   bool containsKey(String key) => _data.containsKey(key);
 
+  /// Removes [key], returning the value it held, or null when it was absent.
+  ///
+  /// Mirrors [Map.remove], and completes the map-like surface: without it a
+  /// consumer can only *blank* a key it no longer wants, and a key holding the
+  /// empty string is a different artifact from an absent one — to every other
+  /// reader of the file, not just to the one that wrote it.
+  ///
+  /// The node is marked modified **only when something was actually removed**.
+  /// [toXml] regenerates the whole element from [_data], so a removal that
+  /// removed nothing produces byte-identical XML, and reporting it as a change
+  /// would provoke a save of a file that did not change. This differs
+  /// deliberately from [operator []=], which cannot make that distinction
+  /// cheaply enough to be worth it: writing a value is nearly always a change,
+  /// whereas removing an absent key is nearly always a no-op.
+  String? remove(String key) {
+    if (!_data.containsKey(key)) {
+      return null;
+    }
+    return modify(() => _data.remove(key));
+  }
+
   @override
   xml.XmlElement toXml() {
     final el = super.toXml();
