@@ -1,0 +1,11 @@
+# Skip this forked upstream during recursive buildkit scans.
+#
+# tom_kdbx is the Tom fork of authpass/kdbx.dart 2.4.2, carrying the patch
+# series `tom/2.4.2-patches` that `tom_webwork_core` pins as a git dependency.
+# It is a pinned third-party upstream, not a Tom-managed project, and must not
+# be built or tested by workspace-wide buildkit pipeline runs — its tests and
+# native argon2 libraries are upstream's concern.
+#
+# Presence of this file (not its contents) is the signal that excludes this
+# directory subtree. It is honoured for nested subtrees but ignored at the
+# scan root.
