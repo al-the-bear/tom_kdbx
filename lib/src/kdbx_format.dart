@@ -117,6 +117,17 @@ class KdbxReadWriteContext {
   void addDeletedObject(KdbxUuid uuid, [DateTime? now]) {
     _deletedObjects.add(KdbxDeletedObject.create(this, uuid));
   }
+
+  /// Whether a tombstone records [uuid].
+  bool hasDeletedObject(KdbxUuid uuid) =>
+      _deletedObjects.any((deleted) => deleted.uuid == uuid);
+
+  /// Removes every tombstone for [uuid], and says whether there was one.
+  bool removeDeletedObject(KdbxUuid uuid) {
+    final before = _deletedObjects.length;
+    _deletedObjects.removeWhere((deleted) => deleted.uuid == uuid);
+    return _deletedObjects.length != before;
+  }
 }
 
 class KdbxBody extends KdbxNode {

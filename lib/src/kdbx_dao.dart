@@ -66,4 +66,22 @@ extension KdbxDao on KdbxFile {
     kdbxObject.times.locationChanged.set(now);
     kdbxObject.internalChangeParent(null);
   }
+
+  /// Whether the file records [uuid] as permanently deleted.
+  bool isDeleted(KdbxUuid uuid) => ctx.hasDeletedObject(uuid);
+
+  /// Forgets that [uuid] was permanently deleted, and says whether the file
+  /// had recorded it.
+  ///
+  /// For a caller that puts an object with that UUID back into the file. A
+  /// file that holds an object and a tombstone for one UUID contradicts
+  /// itself, and a client that merges two copies settles the contradiction
+  /// by time: an object last modified before its tombstone is removed. An
+  /// object that returns with the times it had is older than the deletion,
+  /// so it would be deleted a second time.
+  ///
+  /// It changes nothing else. The file is not marked dirty, as
+  /// [deletePermanently] does not mark it: the object that was put back is
+  /// what the caller saves for.
+  bool clearDeletion(KdbxUuid uuid) => ctx.removeDeletedObject(uuid);
 }
