@@ -4,11 +4,11 @@ import 'dart:typed_data';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:convert/convert.dart' as convert;
 import 'package:crypto/crypto.dart' as crypto;
-import 'package:kdbx/src/credentials/credentials.dart';
-import 'package:kdbx/src/crypto/protected_value.dart';
-import 'package:kdbx/src/utils/byte_utils.dart';
 import 'package:logging/logging.dart';
 import 'package:meta/meta.dart';
+import 'package:tom_kdbx/src/credentials/credentials.dart';
+import 'package:tom_kdbx/src/crypto/protected_value.dart';
+import 'package:tom_kdbx/src/utils/byte_utils.dart';
 import 'package:xml/xml.dart' as xml;
 
 final _logger = Logger('keyfile');

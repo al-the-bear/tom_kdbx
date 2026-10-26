@@ -8,7 +8,7 @@ environment:
 
 dependencies:
 
-  kdbx:
+  tom_kdbx:
     path: ../
 
 dev_dependencies:

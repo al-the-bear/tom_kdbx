@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:kdbx/kdbx.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 
 /// A bitmask that limits an integer to 32 bits.
 const mask32 = 0xFFFFFFFF;

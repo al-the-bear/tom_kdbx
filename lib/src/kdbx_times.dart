@@ -1,9 +1,9 @@
 import 'package:clock/clock.dart';
-import 'package:kdbx/src/kdbx_format.dart';
-import 'package:kdbx/src/kdbx_object.dart';
-import 'package:kdbx/src/kdbx_xml.dart';
 import 'package:logging/logging.dart';
 import 'package:quiver/iterables.dart';
+import 'package:tom_kdbx/src/kdbx_format.dart';
+import 'package:tom_kdbx/src/kdbx_object.dart';
+import 'package:tom_kdbx/src/kdbx_xml.dart';
 
 final _logger = Logger('kdbx_times');
 

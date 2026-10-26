@@ -2,9 +2,9 @@
 
 import 'dart:async';
 
-import 'package:kdbx/kdbx.dart';
 import 'package:quiver/core.dart';
 import 'package:test/test.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 
 import 'internal/test_utils.dart';
 

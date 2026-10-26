@@ -1,7 +1,7 @@
-import 'package:kdbx/src/crypto/protected_value.dart';
-import 'package:kdbx/src/internal/extension_utils.dart';
-import 'package:kdbx/src/kdbx_entry.dart';
-import 'package:kdbx/src/kdbx_group.dart';
+import 'package:tom_kdbx/src/crypto/protected_value.dart';
+import 'package:tom_kdbx/src/internal/extension_utils.dart';
+import 'package:tom_kdbx/src/kdbx_entry.dart';
+import 'package:tom_kdbx/src/kdbx_group.dart';
 
 class KdbxPrintUtils {
   KdbxPrintUtils({

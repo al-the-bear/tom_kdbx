@@ -4,11 +4,11 @@ library;
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:kdbx/kdbx.dart';
-import 'package:kdbx/src/crypto/protected_salt_generator.dart';
 import 'package:logging/logging.dart';
 import 'package:synchronized/synchronized.dart';
 import 'package:test/test.dart';
+import 'package:tom_kdbx/src/crypto/protected_salt_generator.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 
 import 'internal/test_utils.dart';
 

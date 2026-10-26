@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:kdbx/src/kdbx_header.dart';
-import 'package:kdbx/src/kdbx_xml.dart';
-import 'package:kdbx/src/utils/byte_utils.dart';
 import 'package:quiver/core.dart';
+import 'package:tom_kdbx/src/kdbx_header.dart';
+import 'package:tom_kdbx/src/kdbx_xml.dart';
+import 'package:tom_kdbx/src/utils/byte_utils.dart';
 import 'package:xml/xml.dart';
 
 class KdbxBinary {

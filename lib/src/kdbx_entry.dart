@@ -1,20 +1,20 @@
 import 'dart:typed_data';
 
 import 'package:collection/collection.dart' show IterableExtension;
-import 'package:kdbx/src/crypto/protected_value.dart';
-import 'package:kdbx/src/internal/extension_utils.dart';
-import 'package:kdbx/src/kdbx_binary.dart';
-import 'package:kdbx/src/kdbx_consts.dart';
-import 'package:kdbx/src/kdbx_custom_data.dart';
-import 'package:kdbx/src/kdbx_exceptions.dart';
-import 'package:kdbx/src/kdbx_file.dart';
-import 'package:kdbx/src/kdbx_format.dart';
-import 'package:kdbx/src/kdbx_group.dart';
-import 'package:kdbx/src/kdbx_object.dart';
-import 'package:kdbx/src/kdbx_xml.dart';
 import 'package:logging/logging.dart';
 import 'package:path/path.dart' as path;
 import 'package:quiver/check.dart';
+import 'package:tom_kdbx/src/crypto/protected_value.dart';
+import 'package:tom_kdbx/src/internal/extension_utils.dart';
+import 'package:tom_kdbx/src/kdbx_binary.dart';
+import 'package:tom_kdbx/src/kdbx_consts.dart';
+import 'package:tom_kdbx/src/kdbx_custom_data.dart';
+import 'package:tom_kdbx/src/kdbx_exceptions.dart';
+import 'package:tom_kdbx/src/kdbx_file.dart';
+import 'package:tom_kdbx/src/kdbx_format.dart';
+import 'package:tom_kdbx/src/kdbx_group.dart';
+import 'package:tom_kdbx/src/kdbx_object.dart';
+import 'package:tom_kdbx/src/kdbx_xml.dart';
 import 'package:xml/xml.dart';
 
 final _logger = Logger('kdbx.kdbx_entry');

@@ -1,9 +1,9 @@
 import 'package:clock/clock.dart';
-import 'package:kdbx/kdbx.dart';
-import 'package:kdbx/src/kdbx_xml.dart';
-import 'package:kdbx/src/utils/print_utils.dart';
 import 'package:logging/logging.dart';
 import 'package:test/test.dart';
+import 'package:tom_kdbx/src/kdbx_xml.dart';
+import 'package:tom_kdbx/src/utils/print_utils.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 import 'package:xml/xml.dart';
 
 import '../internal/test_utils.dart';

@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:kdbx/kdbx.dart';
 import 'package:test/test.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 
 import 'internal/test_utils.dart';
 

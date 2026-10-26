@@ -1,6 +1,12 @@
-# kdbx.dart
+# tom_kdbx
 
 KeepassX format implementation in pure dart.
+
+**This is a fork** of [kdbx](https://github.com/authpass/kdbx.dart) 2.4.2 by the
+AuthPass project, published as `tom_kdbx` for the Tom workspace. It is upstream
+2.4.2 plus a public UUID-assignment API, `KdbxCustomData.remove`,
+`KdbxDao.clearDeletion` / `isDeleted` and `xml` 7 support; see the CHANGELOG.
+Import it as `package:tom_kdbx/tom_kdbx.dart`. The licence is upstream's, GPL-3.0.
 
 Check out [AuthPass Password Manager](https://authpass.app/) for an app
 which uses this library.

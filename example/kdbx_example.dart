@@ -1,4 +1,4 @@
-import 'package:kdbx/kdbx.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 
 void main() {
   final kdbx = KdbxFormat()

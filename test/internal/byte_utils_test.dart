@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
-import 'package:kdbx/src/utils/byte_utils.dart';
 import 'package:test/test.dart';
+import 'package:tom_kdbx/src/utils/byte_utils.dart';
 
 void main() {
   group('WriteHelper', () {

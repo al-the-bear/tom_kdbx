@@ -1,7 +1,11 @@
-name: kdbx
-description: KeepassX format implementation in pure dart. (kdbx 3.x and 4.x support).
+name: tom_kdbx
+description: >-
+  A fork of kdbx (KeePass KDBX 3.x and 4.x in pure Dart) for the Tom workspace:
+  upstream 2.4.2 plus a public UUID-assignment API, KdbxCustomData.remove,
+  KdbxDao.clearDeletion and xml 7.
 version: 2.4.2+tom.4
-homepage: https://github.com/authpass/kdbx.dart
+repository: https://github.com/al-the-bear/tom_kdbx
+issue_tracker: https://github.com/al-the-bear/tom_kdbx/issues
 
 environment:
   sdk: '>=3.9.0 <4.0.0'

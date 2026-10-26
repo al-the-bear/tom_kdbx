@@ -1,9 +1,9 @@
-import 'package:kdbx/kdbx.dart';
-import 'package:kdbx/src/internal/extension_utils.dart';
-import 'package:kdbx/src/kdbx_entry.dart';
-import 'package:kdbx/src/kdbx_format.dart';
-import 'package:kdbx/src/kdbx_xml.dart';
 import 'package:logging/logging.dart';
+import 'package:tom_kdbx/src/internal/extension_utils.dart';
+import 'package:tom_kdbx/src/kdbx_entry.dart';
+import 'package:tom_kdbx/src/kdbx_format.dart';
+import 'package:tom_kdbx/src/kdbx_xml.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 import 'package:xml/xml.dart';
 
 import 'kdbx_object.dart';

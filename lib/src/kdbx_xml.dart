@@ -3,13 +3,13 @@ import 'dart:typed_data';
 
 import 'package:clock/clock.dart';
 import 'package:collection/collection.dart' show IterableExtension;
-import 'package:kdbx/src/kdbx_consts.dart';
-import 'package:kdbx/src/kdbx_exceptions.dart';
-import 'package:kdbx/src/kdbx_format.dart';
-import 'package:kdbx/src/kdbx_object.dart';
-import 'package:kdbx/src/utils/byte_utils.dart';
 import 'package:logging/logging.dart';
 import 'package:meta/meta.dart';
+import 'package:tom_kdbx/src/kdbx_consts.dart';
+import 'package:tom_kdbx/src/kdbx_exceptions.dart';
+import 'package:tom_kdbx/src/kdbx_format.dart';
+import 'package:tom_kdbx/src/kdbx_object.dart';
+import 'package:tom_kdbx/src/utils/byte_utils.dart';
 import 'package:xml/xml.dart';
 
 final _logger = Logger('kdbx_xml');

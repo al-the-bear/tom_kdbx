@@ -3,9 +3,9 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:argon2_ffi_base/argon2_ffi_base.dart';
-import 'package:kdbx/kdbx.dart';
 import 'package:logging/logging.dart';
 import 'package:logging_appenders/logging_appenders.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 
 final _logger = Logger('test_utils');
 

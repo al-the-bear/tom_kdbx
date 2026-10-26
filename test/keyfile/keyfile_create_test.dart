@@ -1,10 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:kdbx/kdbx.dart';
 import 'package:logging/logging.dart';
 import 'package:quiver/iterables.dart';
 import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 
 import '../internal/test_utils.dart';
 

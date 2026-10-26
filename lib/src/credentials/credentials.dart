@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
-import 'package:kdbx/src/credentials/keyfile.dart';
-import 'package:kdbx/src/crypto/protected_value.dart';
-import 'package:kdbx/src/internal/extension_utils.dart';
+import 'package:tom_kdbx/src/credentials/keyfile.dart';
+import 'package:tom_kdbx/src/crypto/protected_value.dart';
+import 'package:tom_kdbx/src/internal/extension_utils.dart';
 
 abstract class CredentialsPart {
   Uint8List getBinary();

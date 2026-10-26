@@ -1,3 +1,22 @@
+## 2.4.2+tom.4
+
+Published as `tom_kdbx`, a fork of `kdbx` 2.4.2
+(<https://github.com/authpass/kdbx.dart>, by the AuthPass project), from the
+branch `tom/2.4.2-patches` of <https://github.com/al-the-bear/tom_kdbx>.
+The main library is `package:tom_kdbx/tom_kdbx.dart` (upstream's
+`lib/kdbx.dart`, renamed to match the package); the API is upstream's plus:
+
+- `KdbxObjectUuidControl.assignUuid` — a public UUID-assignment API on
+  `KdbxObject`, so an object's UUID can be chosen at creation.
+- `KdbxCustomData.remove`, completing the map-like surface.
+- `KdbxDao.clearDeletion` and `isDeleted`, so an object put back into a file is
+  not left recorded as deleted.
+- `xml: '>=4.4.0 <8.0.0'` — upstream caps `xml` below 7.
+
+Versions keep upstream's number and count this fork's releases in the build
+suffix (`+tom.4`, `+tom.5`, …); the upstream part changes only when the fork is
+rebased onto a new upstream release.
+
 ## 2.4.2
 
 - Update dependencies. (archive, pointycastle)

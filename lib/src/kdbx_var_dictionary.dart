@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
-import 'package:kdbx/src/utils/byte_utils.dart';
 import 'package:logging/logging.dart';
 import 'package:meta/meta.dart';
+import 'package:tom_kdbx/src/utils/byte_utils.dart';
 
 final _logger = Logger('kdbx_var_dictionary');
 

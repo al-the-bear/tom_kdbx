@@ -4,10 +4,10 @@ import 'dart:io';
 import 'package:argon2_ffi_base/argon2_ffi_base.dart';
 import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
-import 'package:kdbx/kdbx.dart';
-import 'package:kdbx/src/utils/print_utils.dart';
 import 'package:logging/logging.dart';
 import 'package:logging_appenders/logging_appenders.dart';
+import 'package:tom_kdbx/src/utils/print_utils.dart';
+import 'package:tom_kdbx/tom_kdbx.dart';
 
 final _logger = Logger('kdbx');
 

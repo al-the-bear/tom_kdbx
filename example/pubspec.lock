@@ -145,13 +145,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.2"
-  kdbx:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "2.3.0"
   lints:
     dependency: transitive
     description:
@@ -296,6 +289,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.9"
+  tom_kdbx:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "2.4.2+tom.4"
   typed_data:
     dependency: transitive
     description:
@@ -329,4 +329,4 @@ packages:
     source: hosted
     version: "6.6.1"
 sdks:
-  dart: ">=3.8.0 <4.0.0"
+  dart: ">=3.9.0 <4.0.0"
